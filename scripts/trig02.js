@@ -18,7 +18,7 @@ window.onload = function() {
 		
 		context.clearRect(0, 0, width, height);
 		context.beginPath();
-		context.arc(0, y, 50, 0, Math.PI * 2, false);
+		context.arc(x, y, 50, 0, Math.PI * 2, false);
 		context.fill();
 		
 		angle += speed;
