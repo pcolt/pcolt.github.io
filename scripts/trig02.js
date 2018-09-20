@@ -14,11 +14,10 @@ window.onload = function() {
 	
 	function render() {
 		var y = centerY + Math.sin(angle) * offset;
-	//	var x = centerX - Math.sin(angle) * offset;
 		
 		context.clearRect(0, 0, width, height);
 		context.beginPath();
-		context.arc(x, y, 50, 0, Math.PI * 2, false);
+		context.arc(centerX, y, 50, 0, Math.PI * 2, false);
 		context.fill();
 		
 		angle += speed;
