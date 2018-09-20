@@ -14,7 +14,7 @@ window.onload = function() {
 	
 	function render() {
 		var y = centerY + Math.sin(angle) * offset;
-		var x = centerX - Math.sin(angle) * offset;
+	//	var x = centerX - Math.sin(angle) * offset;
 		
 		context.clearRect(0, 0, width, height);
 		context.beginPath();
