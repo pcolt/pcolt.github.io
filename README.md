@@ -1,5 +1,7 @@
 # pcolt.github.io
 
-Welcome to my small repository. This will track my path in web programming
+Welcome to my small repository that will track my learning path in web programming
 
-It can be useful if I want to refresh my memory or if someone want to check my progress
+This repository can be useful if I will want to refresh my memory 
+
+and everyone can easily check my progress!
