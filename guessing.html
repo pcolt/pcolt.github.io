@@ -23,12 +23,12 @@
   </head>
 
   <body>
-    <h1>Number guessing game</h1>
+    <h1>Number guessing game - Gioco del numero da indovinare</h1>
 
-    <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
+    <p>Abbiamo selezionato un numero a caso da 1 a 100. Prova a indovinare il numero in meno di 10 tentativi. Noi ti diremo se il numero che hai scelto è più alto o più basso del numero da indovinare</p>
 
     <div class="form">
-      <label for="guessField">Enter a guess: </label><input type="text" id="guessField" class="guessField">
+      <label for="guessField">Inserisci il numero: </label><input type="text" id="guessField" class="guessField">
       <input type="submit" value="Submit guess" class="guessSubmit">
     </div>
 
@@ -80,7 +80,7 @@
         guessField.disabled = true;
         guessSubmit.disabled = true;
         resetButton = document.createElement('button');
-        resetButton.textContent = 'Start new game';
+        resetButton.textContent = 'Inizia una nuova partita';
         document.body.appendChild(resetButton);
         resetButton.addEventListener('click', resetGame);
       }
