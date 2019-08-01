@@ -25,11 +25,11 @@
   <body>
     <h1>Number guessing game - Gioco del numero da indovinare</h1>
 
-    <p>Abbiamo selezionato un numero a caso da 1 a 100. Prova a indovinare il numero in meno di 10 tentativi. Noi ti diremo se il numero che hai scelto è più alto o più basso del numero da indovinare</p>
+    <p>Abbiamo selezionato un numero a caso da 1 a 100. Prova a indovinare il numero in meno di 10 tentativi. Noi ti diremo solo se il numero che hai scelto è più alto o più basso</p>
 
     <div class="form">
       <label for="guessField">Inserisci il numero: </label><input type="text" id="guessField" class="guessField">
-      <input type="submit" value="Submit guess" class="guessSubmit">
+      <input type="submit" value="Invia" class="guessSubmit">
     </div>
 
     <div class="resultParas">
@@ -54,7 +54,7 @@
         }
         guesses.textContent += userGuess + ' ';
         if (userGuess === randomNumber) {
-          lastResult.textContent = 'Congratulations! You got it right!';
+          lastResult.textContent = 'Complimenti! Hai indovinato!';
           lastResult.style.backgroundColor = 'green';
           lowOrHi.textContent = '';
           setGameOver();
@@ -63,12 +63,12 @@
           lowOrHi.textContent = '';
           setGameOver();
         } else {
-          lastResult.textContent = 'Wrong!';
+          lastResult.textContent = 'Non hai indovinato, ritenta!';
           lastResult.style.backgroundColor = 'red';
           if(userGuess < randomNumber) {
-            lowOrHi.textContent = 'Last guess was too low!' ;
+            lowOrHi.textContent = 'Il tuo ultimo tentativo era troppo basso!' ;
           } else if(userGuess > randomNumber) {
-            lowOrHi.textContent = 'Last guess was too high!';
+            lowOrHi.textContent = 'Il tuo ultimo tentativo era troppo alto!';
           }
         }
         guessCount++;
