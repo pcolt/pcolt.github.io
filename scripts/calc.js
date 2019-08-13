@@ -1,7 +1,7 @@
 var input = document.querySelector('.numberInput');
 var square = document.querySelector('.square');
 var cube = document.querySelector('.cube');
-var factorial = document.querySelector('#factorial');
+var factorial = document.querySelector('.factorial');
 
 function squared(num) {
   return num * num;
