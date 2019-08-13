@@ -1,7 +1,7 @@
 var input = document.querySelector('.numberInput');
 var square = document.querySelector('.square');
 var cube = document.querySelector('.cube');
-var factorial = document.querySelector('.factorial');
+var fact = document.querySelector('.fact');
 
 function squared(num) {
   return num * num;
@@ -27,6 +27,6 @@ input.onchange = function() {
   } else {
     square.textContent = num + ' squared is ' + squared(num) + '.';
     cube.textContent = num + ' cubed is ' + cubed(num) + '. ';
-    factorial.textContent = num + ' factorial is ' + factorial(num) + '.';
+    fact.textContent = num + ' factorial is ' + factorial(num) + '.';
   }
 }
