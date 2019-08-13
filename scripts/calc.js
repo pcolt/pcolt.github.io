@@ -1,5 +1,7 @@
 var input = document.querySelector('.numberInput');
-var para = document.querySelector('.para');
+var square = document.querySelector('.square');
+var cube = document.querySelector('.cube');
+var factorial = document.querySelector('#factorial');
 
 function squared(num) {
   return num * num;
@@ -23,8 +25,8 @@ input.onchange = function() {
   if (isNaN(num)) {
     para.textContent = 'You need to enter a number!';
   } else {
-    para.textContent = num + ' squared is ' + squared(num) + '.' +
-                       num + ' cubed is ' + cubed(num) + '. ' +
-                       num + ' factorial is ' + factorial(num) + '.';
+    square.textContent = num + ' squared is ' + squared(num) + '.';
+    cube.textContent = num + ' cubed is ' + cubed(num) + '. ';
+    factorial.textContent = num + ' factorial is ' + factorial(num) + '.';
   }
 }
