@@ -32,7 +32,7 @@ img {
   cursor: pointer;
 }
 	
-.numberInput {
+.numberInput, .latoCorto, .latoLungo {
       font-size: 2em;
       margin: 10px 1px 0;
     }
