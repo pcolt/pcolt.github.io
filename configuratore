@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+  
+<head>
+  <meta charset="utf-8">
+  <title>Configuratore</title>
+  <link href="styles/style.css" rel="stylesheet" type="text/css">
+  <script src="scripts/configuratore.js" async></script>
+</head>
+  
+<body>
+  <p>Lato corto del tetto in metri:</p>
+  <input class="latoCorto" type="text">
+  <p>Lato lungo del tetto in metri:</p>
+  <input class="latoLungo" type="text">
+  
+  <p class="numPannelli"></p>
+
+</body>
+  
+</html>
