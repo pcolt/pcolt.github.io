@@ -7,6 +7,3 @@ var pNumPannelli = document.querySelector('.pNumPanelli');
 inputLatoCorto.onchange = function() {
   var latoCorto = inputLatoCorto.value;
   }
-
-
-}
