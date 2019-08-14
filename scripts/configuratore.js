@@ -25,11 +25,4 @@ inputLatoCorto.onchange = function() {
 
 alert(latoCorto);
 
-#inputLatoCorto.onchange = function() {
-#  var latoCorto = inputLatoCorto.value;
-#  if (isNaN(latoCorto)) {
-#    para.textContent = 'È necessario un numero!';
-#  } else {
-#    pNumPannelli.textContent = num + ' squared is ' + squared(num) + '.';
-#  }
 }
