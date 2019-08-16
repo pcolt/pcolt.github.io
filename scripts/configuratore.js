@@ -7,6 +7,4 @@ var latoLungo = inputLatoLungo.value;
 
 var nTotPannelli = latoCorto * latoLungo;
 
-if (inputLatoCorto.onchange) {
-  pNumPannelli.textContent = 'Numero totale pannelli: ' + nTotPannelli;
-}
+pNumPannelli.textContent = 'Numero totale pannelli: ' + nTotPannelli;
