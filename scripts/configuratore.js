@@ -2,9 +2,8 @@ var inputLatoCorto = document.querySelector('.inputLatoCorto');
 var inputLatoLungo = document.querySelector('.inputLatoLungo');
 var pNumPannelli = document.querySelector('.pNumPanelli');
 
+var latoCorto = inputLatoCorto.value;
+var latoLungo = inputLatoLungo.value;
 
-
-inputLatoCorto.onchange = function() {
-  var latoCorto = inputLatoCorto.value;
-  return(latoCorto);
-  }
+var nTotPannelli = latoCorto * latoLungo;
+pNumPannelli.textContent = 'Numero totale pannelli: ' + nTotPannelli
