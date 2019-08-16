@@ -20,6 +20,10 @@ img {
 	margin: 0 auto;
 }
 
+div {
+	margin: 20px;
+}
+
 .button {
 	letter-spacing: 1px;
   text-transform: uppercase;
