@@ -1,6 +1,6 @@
 var inputLatoCorto = document.querySelector('.inputLatoCorto');
 var inputLatoLungo = document.querySelector('.inputLatoLungo');
-var pNumPannelli = document.querySelector('.pNumPanelli');
+var pNumPannelli = document.querySelector('#pNumPanelli');
 
 var latoCorto = inputLatoCorto.value;
 var latoLungo = inputLatoLungo.value;
