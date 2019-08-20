@@ -1,13 +1,13 @@
 var inputLatoCorto = document.querySelector('.inputLatoCorto');
 var inputLatoLungo = document.querySelector('.inputLatoLungo');
-var pNumPannelli = document.querySelector('p');
+var pArea = document.querySelector('p');
 var button = document.queryselector('button');
 
 button.onclick = function() {
   var latoCorto = inputLatoCorto.value;
   var latoLungo = inputLatoLungo.value;
-  var nTotPannelli = latoCorto * latoLungo;
-  pNumPannelli.textContent = 'Numero totale pannelli: ' + nTotPannelli;
+  var area = latoCorto * latoLungo;
+  pArea.textContent = 'Superficie del tetto in metri: ' + area;
 }
 
 
