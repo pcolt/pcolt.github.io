@@ -7,7 +7,7 @@ button.onclick = function() {
   var latoCorto = inputLatoCorto.value;
   var latoLungo = inputLatoLungo.value;
   var area = latoCorto * latoLungo;
-  pArea.textContent = 'Superficie del tetto in metri: ' + area;
+  pArea.textContent = 'Superficie del tetto: ' + area + ' metri';
 }
 
 
