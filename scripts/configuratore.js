@@ -11,10 +11,12 @@ button.onclick = function() {
   var latoLungo = inputLatoLungo.value;
   var area = latoCorto * latoLungo;
   pArea.textContent = 'Superficie del tetto: ' + area + ' metri quadrati';
+  
+  ctx.fillStyle = 'rgb(0,0,0)';
+  ctx.fillRect = (0,0,300,150);
 }
 
-ctx.fillStyle = 'rgb(0,0,0)';
-ctx.fillRect = (0,0,300,150);
+
 
 
 
