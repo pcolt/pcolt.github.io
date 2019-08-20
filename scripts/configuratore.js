@@ -1,7 +1,7 @@
 var inputLatoCorto = document.querySelector('.inputLatoCorto');
 var inputLatoLungo = document.querySelector('.inputLatoLungo');
 var pArea = document.querySelector('p');
-var button = document.queryselector('button');
+var button = document.querySelector('button');
 
 button.onclick = function() {
   var latoCorto = inputLatoCorto.value;
