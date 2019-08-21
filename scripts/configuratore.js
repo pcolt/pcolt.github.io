@@ -5,7 +5,7 @@ var button = document.querySelector('button');
 
 //function draw() {
   
-}
+//}
 
 button.onclick = function() {
   var latoCorto = inputLatoCorto.value;
