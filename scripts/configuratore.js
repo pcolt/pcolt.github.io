@@ -15,7 +15,7 @@ button.onclick = function() {
   
   var canvas = document.querySelector('.myCanvas');
   var ctx = canvas.getContext('2d');
-  ctx.fillStyle = 'rgb(10,10,10)';
+  ctx.fillStyle = 'rgb(240,240,240)';
   ctx.fillRect(0,0,600,600);
   
   ctx.fillStyle = 'rgb(200, 0, 0)';
