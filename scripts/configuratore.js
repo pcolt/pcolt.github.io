@@ -6,14 +6,14 @@ var canvas = document.querySelector('.myCanvas');
 
 var ctx = canvas.getContext('2d');
 
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillRect = (0,0,300,150);
+
 button.onclick = function() {
   var latoCorto = inputLatoCorto.value;
   var latoLungo = inputLatoLungo.value;
   var area = latoCorto * latoLungo;
   pArea.textContent = 'Superficie del tetto: ' + area + ' metri quadrati';
-  
-  ctx.fillStyle = 'rgb(0,0,0)';
-  ctx.fillRect = (0,0,300,150);
 }
 
 
