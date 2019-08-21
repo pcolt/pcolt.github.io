@@ -13,15 +13,13 @@ button.onclick = function() {
   var area = latoCorto * latoLungo;
   pArea.textContent = 'Superficie del tetto: ' + area + ' metri quadrati';
   
-  var lCorto100 = latoCorto * 100;
-  var lLungo100 = latoLungo * 100;
   var canvas = document.querySelector('.myCanvas');
   var ctx = canvas.getContext('2d');
   ctx.fillStyle = 'rgb(0,0,255)';
   ctx.fillRect(0,0,300,150);
   
   ctx.fillStyle = 'rgb(200, 0, 0)';
-  ctx.fillRect(10, 10, lCorto100, lLungo100);
+  ctx.fillRect(10, 10, latoLungo * 30, latoCorto * 30);
   ctx.fillStyle = 'rgba(0, 0, 200, 0.5)';
   ctx.fillRect(30, 30, 50, 50);
 }
