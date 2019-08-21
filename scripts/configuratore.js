@@ -3,7 +3,16 @@ var inputLatoLungo = document.querySelector('.inputLatoLungo');
 var pArea = document.querySelector('p');
 var button = document.querySelector('button');
 
-function draw() {
+//function draw() {
+  
+}
+
+button.onclick = function() {
+  var latoCorto = inputLatoCorto.value;
+  var latoLungo = inputLatoLungo.value;
+  var area = latoCorto * latoLungo;
+  pArea.textContent = 'Superficie del tetto: ' + area + ' metri quadrati';
+  
   var canvas = document.querySelector('.myCanvas');
   var ctx = canvas.getContext('2d');
   ctx.fillStyle = 'rgb(0,0,255)';
@@ -13,13 +22,6 @@ function draw() {
   ctx.fillRect(10, 10, 50, 50);
   ctx.fillStyle = 'rgba(0, 0, 200, 0.5)';
   ctx.fillRect(30, 30, 50, 50);
-}
-
-button.onclick = function() {
-  var latoCorto = inputLatoCorto.value;
-  var latoLungo = inputLatoLungo.value;
-  var area = latoCorto * latoLungo;
-  pArea.textContent = 'Superficie del tetto: ' + area + ' metri quadrati';
 }
 
 
