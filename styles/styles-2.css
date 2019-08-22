@@ -1,0 +1,25 @@
+html {
+  font-family: 'Open Sans', sans-serif; 
+}
+
+
+p, li {
+  font-size: 16px;    
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+body {
+  //width: 600px;
+  margin: 0 auto;
+
+}
+
+div {
+	margin: 10px 0px 0px 0px;
+}
+	
+.inputLatoCorto .inputLatoLungo {
+      font-size: 2em;
+      margin: 10px 1px 0;
+    }
