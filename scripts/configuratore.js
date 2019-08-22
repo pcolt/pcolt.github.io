@@ -37,7 +37,7 @@ button.onclick = function() {
     	x += 1*scala;
     	}
    x = 6;
-   y +=2*scala;
+   y += 2*scala;
    }
 }
 
