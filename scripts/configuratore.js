@@ -16,6 +16,9 @@ button.onclick = function() {
   //disego nel canvas
   var canvas = document.querySelector('.myCanvas');
   var ctx = canvas.getContext('2d');
+  //ripulisce eventuale precedente disegno con un quadrato bianco
+  ctx.fillStyle = 'rgb(255,255,255)';
+  ctx.fillRect(0,0,600,600);
   //un rettangolo con le dimensioni del tetto moltiplicate per una scala di 20
   ctx.fillStyle = 'rgb(240,240,240)';
   ctx.fillRect(0,0,latoCorto*20,latoLungo*20);
