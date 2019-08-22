@@ -30,7 +30,7 @@ button.onclick = function() {
   var y = 6;
   //doppio loop per disegnare tutti i moduli con dimensioni scalate di 20 e margine di (0,3m x 20 = 6)
   while (y <= (latoLungo*scala - 2*scala -6)) {
-    while (x <= (latoCorto*scala - 1*scala - 6) {
+    while (x <= (latoCorto*scala - 1*scala - 6)) {
       ctx.strokeStyle = 'rgb(0, 0, 0)';
     	//ctx.lineWidth = 5;
     	ctx.strokeRect(x,y,1*scala,2*scala);
