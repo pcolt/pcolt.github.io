@@ -19,12 +19,12 @@ button.onclick = function() {
   //un rettangolo con le dimensioni del tetto moltiplicate per una scala di 20
   ctx.fillStyle = 'rgb(240,240,240)';
   ctx.fillRect(0,0,latoCorto*20,latoLungo*20);
-  //posizione del primo modulo MAS
+  //posizione del primo modulo MAS, 6 = 0,3 m x 20
   var x = 6;
   var y = 6;
-  //doppio loop per disegnare tutti i moduli con dimensioni scalate di 20
-  while (y <= latoLungo*20) {
-    while (x <= latoCorto*20) {
+  //doppio loop per disegnare tutti i moduli con dimensioni scalate di 20 e margine di (0,3m x 20 = 6)
+  while (y <= (latoLungo*20 - 2*20 -6)) {
+    while (x <= (latoCorto*20 - 1*20 - 6) {
       ctx.strokeStyle = 'rgb(0, 0, 0)';
     	//ctx.lineWidth = 5;
     	ctx.strokeRect(x,y,1*20,2*20);
