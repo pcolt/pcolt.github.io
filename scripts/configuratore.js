@@ -31,7 +31,7 @@ button.onclick = function() {
   var x = 6;
   var y = 6;
   //doppio loop per disegnare tutti i moduli con dimensioni scalate di 20 e margine di (0,3m x 20 = 6)
-  if (orietamento === Verticale) {
+  if (orientamento === Verticale) {
   while (y <= (latoVert*scala - 2*scala -6)) {
     while (x <= (latoOriz*scala - 1*scala - 6)) {
       ctx.fillStyle = 'rgb(0,0,200)';
