@@ -1,15 +1,15 @@
-var inputLatoCorto = document.querySelector('.inputLatoCorto');
-var inputLatoLungo = document.querySelector('.inputLatoLungo');
+var inputLatoOriz = document.querySelector('.inputLatoOriz');
+var inputLatoVert = document.querySelector('.inputLatoVert');
 var pArea = document.querySelector('p');
 var button = document.querySelector('button');
 
 //quando il pulsante è premuto scrivo nel paragrafo la superficie del tetto e disegno nel canvas
 button.onclick = function() {
   //registro i valori immessi
-  var latoCorto = inputLatoCorto.value;
-  var latoLungo = inputLatoLungo.value;
+  var latoOriz = inputLatoOriz.value;
+  var latoVert = inputLatoVert.value;
   //calcolo l'area
-  var area = latoCorto * latoLungo;
+  var area = latoOriz * latoVert;
   //scrivo la superficie
   pArea.textContent = 'Superficie del tetto: ' + area + ' metri quadrati';
   
@@ -22,16 +22,16 @@ button.onclick = function() {
   var scala = 20;
   //un rettangolo con le dimensioni del tetto moltiplicate per la scala
   ctx.fillStyle = 'rgb(240,240,240)';
-  ctx.fillRect(0,0,latoCorto*scala,latoLungo*scala);
+  ctx.fillRect(0,0,latoOriz*scala,latoVert*scala);
   ctx.strokeStyle = 'rgb(0,0,0)';
-  ctx.strokeRect(0,0,latoCorto*scala,latoLungo*scala);
+  ctx.strokeRect(0,0,latoOriz*scala,latoVert*scala);
   //posizione del primo modulo MAS, 6 = 0,3 m x 20
   var x = 6;
   var y = 6;
   //doppio loop per disegnare tutti i moduli con dimensioni scalate di 20 e margine di (0,3m x 20 = 6)
-  while (y <= (latoLungo*scala - 2*scala -6)) {
-    while (x <= (latoCorto*scala - 1*scala - 6)) {
-      ctx.fillStyle = 'rgb(0,0,100)';
+  while (y <= (latoVert*scala - 2*scala -6)) {
+    while (x <= (latoOriz*scala - 1*scala - 6)) {
+      ctx.fillStyle = 'rgb(0,0,200)';
       ctx.fillRect(x,y,1*scala,2*scala);
       ctx.strokeStyle = 'rgb(0, 0, 0)';
     	//ctx.lineWidth = 5;
