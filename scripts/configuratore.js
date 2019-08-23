@@ -44,7 +44,7 @@ button.onclick = function() {
    x = 6;
    y += 2*scala;
    }
-   else {
+  } else {
     while (y <= (latoVert*scala - 1*scala -6)) {
       while (x <= (latoOriz*scala - 2*scala - 6)) {
         ctx.fillStyle = 'rgb(0,0,200)';
