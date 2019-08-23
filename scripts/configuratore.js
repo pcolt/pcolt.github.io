@@ -2,7 +2,7 @@ var inputLatoOriz = document.querySelector('.inputLatoOriz');
 var inputLatoVert = document.querySelector('.inputLatoVert');
 var pArea = document.querySelector('p');
 var button = document.querySelector('button');
-var inputOrientam = document.querySelector('#orientamento');
+var inputOrientam = document.querySelector('#inputOrientam');
 
 //quando il pulsante è premuto scrivo nel paragrafo la superficie del tetto e disegno nel canvas
 button.onclick = function() {
@@ -31,7 +31,7 @@ button.onclick = function() {
   var x = 6;
   var y = 6;
   //doppio loop per disegnare tutti i moduli con dimensioni scalate di 20 e margine di (0,3m x 20 = 6)
-  if (orietamento === verticale) {
+  if (orietamento === Verticale) {
   while (y <= (latoVert*scala - 2*scala -6)) {
     while (x <= (latoOriz*scala - 1*scala - 6)) {
       ctx.fillStyle = 'rgb(0,0,200)';
