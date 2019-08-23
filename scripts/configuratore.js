@@ -2,14 +2,14 @@ var inputLatoOriz = document.querySelector('.inputLatoOriz');
 var inputLatoVert = document.querySelector('.inputLatoVert');
 var pArea = document.querySelector('p');
 var button = document.querySelector('button');
-var orientamento = document.querySelector('#orientamento');
+var inputOrientam = document.querySelector('#orientamento');
 
 //quando il pulsante è premuto scrivo nel paragrafo la superficie del tetto e disegno nel canvas
 button.onclick = function() {
   //registro i valori immessi
   var latoOriz = inputLatoOriz.value;
   var latoVert = inputLatoVert.value;
-  var orientamento = orientamento.value;
+  var orientamento = inputOrientam.value;
   //calcolo l'area
   var area = latoOriz * latoVert;
   //scrivo la superficie
