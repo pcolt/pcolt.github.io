@@ -2,12 +2,14 @@ var inputLatoOriz = document.querySelector('.inputLatoOriz');
 var inputLatoVert = document.querySelector('.inputLatoVert');
 var pArea = document.querySelector('p');
 var button = document.querySelector('button');
+var orientamento = document.querySelector('#orientamento');
 
 //quando il pulsante è premuto scrivo nel paragrafo la superficie del tetto e disegno nel canvas
 button.onclick = function() {
   //registro i valori immessi
   var latoOriz = inputLatoOriz.value;
   var latoVert = inputLatoVert.value;
+  var orientamento = orientamento.value;
   //calcolo l'area
   var area = latoOriz * latoVert;
   //scrivo la superficie
@@ -29,6 +31,7 @@ button.onclick = function() {
   var x = 6;
   var y = 6;
   //doppio loop per disegnare tutti i moduli con dimensioni scalate di 20 e margine di (0,3m x 20 = 6)
+  if (orietamento === verticale) {
   while (y <= (latoVert*scala - 2*scala -6)) {
     while (x <= (latoOriz*scala - 1*scala - 6)) {
       ctx.fillStyle = 'rgb(0,0,200)';
@@ -40,6 +43,19 @@ button.onclick = function() {
     	}
    x = 6;
    y += 2*scala;
+   }
+   else {
+    while (y <= (latoVert*scala - 1*scala -6)) {
+      while (x <= (latoOriz*scala - 2*scala - 6)) {
+        ctx.fillStyle = 'rgb(0,0,200)';
+        ctx.fillRect(x,y,2*scala,1*scala);
+        ctx.strokeStyle = 'rgb(0, 0, 0)';
+    	  //ctx.lineWidth = 5;
+    	  ctx.strokeRect(x,y,2*scala,1*scala);
+    	  x += 2*scala;
+    	 }
+    x = 6;
+    y += 1*scala;
    }
 }
 
