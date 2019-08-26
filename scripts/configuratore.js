@@ -1,8 +1,7 @@
 var inputLatoOriz = document.querySelector('.inputLatoOriz');
 var inputLatoVert = document.querySelector('.inputLatoVert');
-var pAreaTetto = document.querySelector('#areaTetto');
-var pNumPann = document.querySelector('#numPann');
-var pPotPann = document.querySelector('#potPann');
+var pResult = document.querySelector('#result');
+
 var button = document.querySelector('button');
 var inputOrientam = document.querySelector('#inputOrientam');
 
@@ -64,11 +63,9 @@ button.onclick = function() {
   }
   
   //scrivo la superficie, numero pannelli, superficie captante...
-  pAreaTetto.textContent = 'Superficie del tetto: ' + area + ' metri quadrati \r\n' + 
-    'Numero totale dei pannelli è: ' + count + '\r\n' + 'La superficie totale captante è: ' + count*1.78 + ' metri quadrati';
+  pAreaTetto.textContent = 'Superficie tetto: ' + area + ' metri quadrati \r\n' + 
+    'Numero totale pannelli: ' + count + '\r\n' + 'Superficie totale captante: ' + count*1.78 + ' metri quadrati';
   
-  pNumPann.textContent = 'Numero totale dei pannelli è: ' + count;
-  pPotPann.textContent = 'La superficie totale captante è: ' + count*1.78 + ' metri quadrati';
 }
 
 
