@@ -64,8 +64,8 @@ button.onclick = function() {
   }
   
   //scrivo la superficie, numero pannelli, superficie captante...
-  pAreaTetto.textContent = 'Superficie del tetto: ' + area + ' metri quadrati' + String.fromCharCode(13) + 
-    'Numero totale dei pannelli è: ' + count + String.fromCharCode(13) + 'La superficie totale captante è: ' + count*1.78 + ' metri quadrati';
+  pAreaTetto.textContent = 'Superficie del tetto: ' + area + ' metri quadrati \r\n' + 
+    'Numero totale dei pannelli è: ' + count + '\r\n' + 'La superficie totale captante è: ' + count*1.78 + ' metri quadrati';
   
   pNumPann.textContent = 'Numero totale dei pannelli è: ' + count;
   pPotPann.textContent = 'La superficie totale captante è: ' + count*1.78 + ' metri quadrati';
