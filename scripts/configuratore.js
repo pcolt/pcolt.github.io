@@ -64,7 +64,7 @@ button.onclick = function() {
    }
   }
   
-  pNumPann.textContent = 'Numero totale dei pannelli è: ' + count;
+  pNumPann.textContent = 'Numero totale dei pannelli è: ' + count + <br> + 'some other text';
   pPotPann.textContent = 'La superficie totale captante è: ' + count*2 + ' metri quadrati';
 }
 
