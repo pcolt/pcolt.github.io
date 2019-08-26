@@ -1,6 +1,8 @@
 var inputLatoOriz = document.querySelector('.inputLatoOriz');
 var inputLatoVert = document.querySelector('.inputLatoVert');
-var pArea = document.querySelector('p');
+var pAreaTetto = document.querySelector('#areaTetto');
+var pNumPann = document.querySelector('#numPann');
+var pPotPann = document.querySelector('#potPann');
 var button = document.querySelector('button');
 var inputOrientam = document.querySelector('#inputOrientam');
 
@@ -13,7 +15,7 @@ button.onclick = function() {
   //calcolo l'area
   var area = latoOriz * latoVert;
   //scrivo la superficie
-  pArea.textContent = 'Superficie del tetto: ' + area + ' metri quadrati';
+  pAreaTetto.textContent = 'Superficie del tetto: ' + area + ' metri quadrati';
   
   //disego nel canvas
   var canvas = document.querySelector('.myCanvas');
@@ -30,6 +32,7 @@ button.onclick = function() {
   //posizione del primo modulo MAS, 6 = 0,3 m x 20
   var x = 6;
   var y = 6;
+  var count = 0;
   //doppio loop per disegnare tutti i moduli con dimensioni scalate di 20 e margine di (0,3m x 20 = 6)
   if (orientamento === 'Verticale') {
   while (y <= (latoVert*scala - 2*scala -6)) {
@@ -40,6 +43,7 @@ button.onclick = function() {
     	//ctx.lineWidth = 5;
     	ctx.strokeRect(x,y,1*scala,2*scala);
     	x += 1*scala;
+      count += 1;
     	}
    x = 6;
    y += 2*scala;
@@ -53,12 +57,17 @@ button.onclick = function() {
     	  //ctx.lineWidth = 5;
     	  ctx.strokeRect(x,y,2*scala,1*scala);
     	  x += 2*scala;
+        count += 1;
     	 }
     x = 6;
     y += 1*scala;
    }
   }
+  
+  pNumPann.textContent = 'Numero totale dei pannelli è: ' + count;
+  pPotPann.textContent = 'La superficie totale captante è: ' + count*2 + ' metri quadrati';
 }
+
 
 
 
