@@ -63,7 +63,7 @@ button.onclick = function() {
   }
   
   //scrivo la superficie, numero pannelli, superficie captante...
-  pAreaTetto.textContent = 'Superficie tetto: ' + area + ' metri quadrati \r\n' + 
+  pResult.textContent = 'Superficie tetto: ' + area + ' metri quadrati \r\n' + 
     'Numero totale pannelli: ' + count + '\r\n' + 'Superficie totale captante: ' + count*1.78 + ' metri quadrati';
   
 }
