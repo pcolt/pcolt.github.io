@@ -14,8 +14,7 @@ button.onclick = function() {
   var orientamento = inputOrientam.value;
   //calcolo l'area
   var area = latoOriz * latoVert;
-  //scrivo la superficie
-  pAreaTetto.textContent = 'Superficie del tetto: ' + area + ' metri quadrati';
+  
   
   //disego nel canvas
   var canvas = document.querySelector('.myCanvas');
@@ -64,8 +63,12 @@ button.onclick = function() {
    }
   }
   
+  //scrivo la superficie, numero pannelli, superficie captante...
+  pAreaTetto.textContent = 'Superficie del tetto: ' + area + ' metri quadrati' + String.fromCharCode(13) + 
+    'Numero totale dei pannelli è: ' + count + String.fromCharCode(13) + 'La superficie totale captante è: ' + count*1.78 + ' metri quadrati';
+  
   pNumPann.textContent = 'Numero totale dei pannelli è: ' + count;
-  pPotPann.textContent = 'La superficie totale captante è: ' + count*2 + ' metri quadrati';
+  pPotPann.textContent = 'La superficie totale captante è: ' + count*1.78 + ' metri quadrati';
 }
 
 
