@@ -13,17 +13,17 @@
   <h1>Configuratore tetto MAS Roof</h1>
   
   <div>
-    <label for="inputLatoOriz">Lato orizzontale del tetto in metri:</label>
+    <label for="inputLatoOriz">Lato orizzontale del tetto in metri: </label>
     <input class="inputLatoOriz" type="text">
   </div>
   
   <div>
-    <label for="inputLatoVert">Lato verticale del tetto in metri:</label>
+    <label for="inputLatoVert">Lato verticale del tetto in metri: </label>
     <input class="inputLatoVert" type="text">
   </div>
   
   <div>
-    <label for="inputOrientam">Orientamento pannelli MAS Roof</label>
+    <label for="inputOrientam">Orientamento pannelli MAS Roof: </label>
     <select id="inputOrientam" name="inputOrientam">
       <option>Orizzontale</option>
       <option>Verticale</option>
@@ -34,12 +34,14 @@
     <button>Calcola</button>
   </div>
     
-  <p></p>
+  <p id="areaTetto"></p>
 
-    <canvas class="myCanvas" width="600" height="600">
-      <p>Your browser do not support Canvas</p>
-    </canvas>
+  <canvas class="myCanvas" width="600" height="600">
+    <p>Your browser do not support Canvas</p>
+  </canvas>
   
+  <p id="numPann"></p>
+  <p id="potPann"></p>
 </body>
   
 </html>
