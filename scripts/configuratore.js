@@ -34,28 +34,28 @@ button.onclick = function() {
   var count = 0;
   //doppio loop per disegnare tutti i moduli con dimensioni scalate di 20 e margine di (0,3m x 20 = 6)
   if (orientamento === 'Verticale') {
-  while (y <= (latoVert*scala - 2*scala -6)) {
+  while (y <= (latoVert*scala - 1.82*scala -6)) {
     while (x <= (latoOriz*scala - 1*scala - 6)) {
       ctx.fillStyle = 'rgb(0,0,200)';
-      ctx.fillRect(x,y,1*scala,2*scala);
+      ctx.fillRect(x,y,1*scala,1.82*scala);
       ctx.strokeStyle = 'rgb(0, 0, 0)';
     	//ctx.lineWidth = 5;
-    	ctx.strokeRect(x,y,1*scala,2*scala);
+    	ctx.strokeRect(x,y,1*scala,1.82*scala);
     	x += 1*scala;
       count += 1;
     	}
    x = 6;
-   y += 2*scala;
+   y += 1.82*scala;
    }
   } else {
     while (y <= (latoVert*scala - 1*scala -6)) {
-      while (x <= (latoOriz*scala - 2*scala - 6)) {
+      while (x <= (latoOriz*scala - 1.82*scala - 6)) {
         ctx.fillStyle = 'rgb(0,0,200)';
-        ctx.fillRect(x,y,2*scala,1*scala);
+        ctx.fillRect(x,y,1.82*scala,1*scala);
         ctx.strokeStyle = 'rgb(0, 0, 0)';
     	  //ctx.lineWidth = 5;
-    	  ctx.strokeRect(x,y,2*scala,1*scala);
-    	  x += 2*scala;
+    	  ctx.strokeRect(x,y,1.82*scala,1*scala);
+    	  x += 1.82*scala;
         count += 1;
     	 }
     x = 6;
