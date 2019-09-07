@@ -1,3 +1,4 @@
+//elementi del DOM che ci servono
 var inputLatoOriz = document.querySelector('.inputLatoOriz');
 var inputLatoVert = document.querySelector('.inputLatoVert');
 var pResult = document.querySelector('#result');
@@ -5,15 +6,15 @@ var pResult = document.querySelector('#result');
 var button = document.querySelector('button');
 var inputOrientam = document.querySelector('#inputOrientam');
 
-//quando il pulsante è premuto scrivo nel paragrafo la superficie del tetto e disegno nel canvas
+//quando il pulsante viene cliccato lancio la funzione per calcolare superficie falda, 
+//numero pannelli, superficie pannell, potenza e canvas con disegno disposizione pannelli
 button.onclick = function() {
   //registro i valori immessi
   var latoOriz = inputLatoOriz.value;
   var latoVert = inputLatoVert.value;
   var orientamento = inputOrientam.value;
-  //calcolo l'area
+  //calcolo area falda
   var area = latoOriz * latoVert;
-  
   
   //disego nel canvas
   var canvas = document.querySelector('.myCanvas');
@@ -32,6 +33,7 @@ button.onclick = function() {
   var y = 6;
   var count = 0;
   //doppio loop per disegnare tutti i moduli con dimensioni scalate di 20 e margine di (0,3m x 20 = 6)
+  //primo loop se disposizione dei pannelli selezionata in 'verticale'
   if (orientamento === 'Verticale') {
   while (y <= (latoVert*scala - 1.82*scala -6)) {
     while (x <= (latoOriz*scala - 1*scala - 6)) {
@@ -46,6 +48,7 @@ button.onclick = function() {
    x = 6;
    y += 1.82*scala;
    }
+  //secondo loop se disposizione dei pannelli selezionata in 'orizzontale'
   } else {
     while (y <= (latoVert*scala - 1*scala -6)) {
       while (x <= (latoOriz*scala - 1.82*scala - 6)) {
