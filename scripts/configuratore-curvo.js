@@ -32,7 +32,6 @@ button.onclick = function() {
       ltot = Math.sqrt((xtot * xtot) + (ytot * ytot))
       }
     count += latoVert / 1;
-  }
   //secondo loop se disposizione dei pannelli selezionata in 'Verticale'
   } else {
     while (ltot <= latoOriz) {
