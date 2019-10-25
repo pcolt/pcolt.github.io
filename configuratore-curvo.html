@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+  
+<head>
+  <meta charset="utf-8">
+  <title>Configuratore Curvo</title>
+  <link href="styles/style.css" rel="stylesheet" type="text/css">
+  <script src="scripts/configuratore.js" async></script>
+</head>
+  
+<body>
+  <h1>Configuratore MAS Roof</h1>
+  <h2>Tetto curvo</h2>
+  
+  <div>
+    <label for="inputLatoOriz">Lato orizzontale della falda in metri: </label>
+    <input class="inputLatoOriz" type="text">
+  </div>
+  
+  <div>
+    <label for="inputLatoVert">Lato verticale della falda in metri: </label>
+    <input class="inputLatoVert" type="text">
+  </div>
+  
+  <div>
+    <label for="inputOrientam">Orientamento pannelli MAS Roof: </label>
+    <select id="inputOrientam" name="inputOrientam">
+      <option>Orizzontale</option>
+      <option>Verticale</option>
+    </select>
+  </div>
+  
+  <div>
+    <button>Calcola</button>
+  </div>
+    
+  <p id="result"></p>
+  
+  <canvas class="myCanvas" width="600" height="600">
+    <p>Your browser do not support Canvas</p>
+  </canvas>
+  
+</body>
+  
+</html>
