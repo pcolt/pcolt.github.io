@@ -30,6 +30,7 @@ button.onclick = function() {
       i += 2;
       count += 1;
       ltot = Math.sqrt((xtot * xtot) + (ytot * ytot))
+      console.log(count);
       }
     count = count * (Math.floor(latoVert / 1));
   //secondo loop se disposizione dei pannelli selezionata in 'Verticale'
