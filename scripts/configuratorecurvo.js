@@ -20,7 +20,7 @@ button.onclick = function() {
   var xtot = 0;
   var ytot = 0;
   //inizializzo variabile per conteggio numero moduli
-  var count = 0;
+  var count = -1;
 
   if (orientamento === 'Orizzontale') {
     while (ltot <= latoOriz) {
