@@ -33,6 +33,7 @@ button.onclick = function() {
       console.log(count);
       }
     count = count * (Math.floor(latoVert / 1));
+    console.log(count);
   //secondo loop se disposizione dei pannelli selezionata in 'Verticale'
   } else {
     while (ltot <= latoOriz) {
@@ -42,8 +43,10 @@ button.onclick = function() {
       i += 2;
       count += 1;
       ltot = Math.sqrt((xtot * xtot) + (ytot * ytot))
+      console.log(count);
       }
     count = count * (Math.floor(latoVert / 1.82));
+    console.log(count);
   }
   
   //scrivo la superficie, numero pannelli, superficie captante...
